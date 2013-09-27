@@ -16,7 +16,7 @@ util.inherits(GaugeWritable, Writable);
  * @function
  * @param el {DOMElement} to attach the gauge to
  * @param opts {Object} passed to the [Writable](http://nodejs.org/api/stream.html#stream_new_stream_writable_options)
- *  - gauge: property on the opts Object passed to d3-gauge
+ *  - gauge: property on the opts Object passed to [d3-gauge](https://github.com/thlorenz/d3-gauge#gauge-el-opts)
  * @return {Stream} a writable stream
  */
 function GaugeWritable (el, opts) {
