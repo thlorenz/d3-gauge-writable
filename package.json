@@ -1,6 +1,6 @@
 {
   "name": "d3-gauge-writable",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "d3 gauge with a writable stream API so you can pipe into it.",
   "main": "d3-gauge-writable.js",
   "scripts": {
