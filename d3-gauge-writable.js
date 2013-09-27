@@ -23,7 +23,7 @@ function GaugeWritable (el, opts) {
   if (!(this instanceof GaugeWritable)) return new GaugeWritable(el, opts);
 
   opts = opts || {};
-  this.gauge = d3gauge(el, (opts && opts.gauge));
+  this._gauge = d3gauge(el, (opts && opts.gauge));
   Writable.call(this, opts);
 }
 
@@ -46,7 +46,7 @@ GaugeWritable.prototype._write = function (chunk, encoding, cb) {
     else if(typeof chunk === 'string')  val = parseInt(chunk, 10);
     else cb(new Error('Stream needs to emit numbers in object mode or stringified or buffered numbers otherwise'));
 
-    this.gauge.write(val);
+    this._gauge.write(val);
     cb();
   } catch (err) {
     cb(err);
