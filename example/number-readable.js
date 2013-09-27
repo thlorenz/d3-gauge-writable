@@ -26,10 +26,6 @@ NumberReadable.prototype._read = function () {
 if (typeof window === 'undefined' && !module.parent) {
   var numbers = new NumberReadable({ to: 3 });
   numbers
-    .on('data', function (d) {
-      console.log(Buffer.isBuffer(d))
-      console.log(typeof d)
-      console.log(d.toString())
-    })
+    .on('data', function (d) { console.log(d.toString()) })
     .on('end', function () { console.error('ended') })
 }

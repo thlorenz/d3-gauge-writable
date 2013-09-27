@@ -3,12 +3,13 @@
 d3 gauge with a writable stream API so you can pipe into it.
 
 ```js
-// TODO
+var gaugeWritable = require('d3-gauge-writable')
+  , numbers = require('./number-readable')
+
+numbers({ to: 40, throttle: 500 })
+  .pipe(gaugeWritable(el, { gauge: gaugeOpts }))
 ```
 
-## Status
-
-Nix, Nada, Nichevo, Nothing --> go away!
 ## Installation
 
     npm install d3-gauge-writable

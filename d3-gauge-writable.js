@@ -9,6 +9,16 @@ module.exports = GaugeWritable;
 
 util.inherits(GaugeWritable, Writable);
 
+/**
+ * Creates a writable stream that writes to a d3-gauge.
+ * 
+ * @name GaugeWritable
+ * @function
+ * @param el {DOMElement} to attach the gauge to
+ * @param opts {Object} passed to the [Writable](http://nodejs.org/api/stream.html#stream_new_stream_writable_options)
+ *  - gauge: property on the opts Object passed to d3-gauge
+ * @return {Stream} a writable stream
+ */
 function GaugeWritable (el, opts) {
   if (!(this instanceof GaugeWritable)) return new GaugeWritable(el, opts);
 
