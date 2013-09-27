@@ -1,6 +1,6 @@
 {
   "name": "d3-gauge-writable",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "d3 gauge with a writable stream API so you can pipe into it.",
   "main": "d3-gauge-writable.js",
   "scripts": {
@@ -19,7 +19,15 @@
     "beefy": "~0.4.4",
     "tape": "~1.1.1"
   },
-  "keywords": [ "d3", "gauge", "svg", "visualize", "visualization", "stream", "writable" ],
+  "keywords": [
+    "d3",
+    "gauge",
+    "svg",
+    "visualize",
+    "visualization",
+    "stream",
+    "writable"
+  ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
